@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Input tag</title>
+<style>
+	label{
+		display: inline-block;
+		width: 80px;
+		margin-top:10px;
+		text-align:right;
+		padding-right: 5px;
+	}
+	input{
+		width: 200px;
+		height: 30px;
+		border: 1px solid blue;
+	}
+	
+	input[type ="radio"] {
+		width: 20px;
+		height:20px;
+	}
+</style>
+</head>
+<body>
+	<!-- 
+		HTML 에서 입력을 받는 태그
+		input
+			입력을 받을 수 있는 태그
+			type ]
+				text		- 텍스트를 입력받는 타입
+				password	- 비밀번호 입력받는 타입
+				radio		- 라디오버튼을 만들 수 있는 타입
+				button		- 버튼을 만드는 타입
+				submit		- 폼의 데이터를 전송하는 버튼을 만드는 타입
+				file		- 파일을 선택하는 기능을 만드는 태그
+				hidden		- 넘길 데이터를 화면에 보이지 않도록 하는 타입
+		textarea
+			다중행 입력을 받을 수 있는 태그
+			
+		select
+			셀렉트 박스를 만드는 태그
+		
+		참고 ]
+			input 태그와 함께 사용하는 태그로
+			label 사용을 한다
+			label의 속성중 for 속성은  해당 라벨이 클릭이 됐을 경우
+			포커스가 맞춰질 태그를 지정하는 속성...
+	
+		★★★★★
+		중요 ]
+			submit 타입의 input 태그가 클릭이 되면
+			그 태그를 감싸고 있는 form 태그의 input 태그의 내용을
+			요청 페이지로 전송한다.
+			
+		참고 ]
+			form 태그
+				요청 페이지로 데이터를 전송을 할 때
+				여러개의 데이터를 한번 작업으로 전송할 목적으로 사용하는 태그
+				이때 form 태그의 input 태그의 내용이 전송이 되는데
+				form 객체로 전송이 되거나 파라미터로 전송이 된다.
+			
+				주요 속성 ]
+					method	: 데이터 전송 방식
+					action	: 데이터를 전송할 페이지
+	!-->
+	<form method="GET" action="Test07.html">
+		<label for="id">아이디 : </label>
+		<input type="text" id="id" name="sid"><br>
+		<label for="ipw">비밀번호 :</label>
+		<input type="password" id="pw" name="spw"><br>
+		<label >성별 : </label>
+		<input type="radio" name="gen" value="M"><span>남자</span>
+		<input type="radio" name="gen" value="F"><span>여자</span><br>
+		<div style="width: 297px; padding: 0px;">
+			<label>관심사항</label>
+			<div style="display: inline-block; width:150px;">
+				<input type="checkbox" name="fab" value="java"><span>자바</span>
+				<input type="checkbox" name="fab" value="DB"><span>database</span>
+				<input type="checkbox" name="fab" value="html"><span>html</span>
+				<input type="checkbox" name="fab" value="jsp"><span>jsp</span>
+				<input type="checkbox" name="fab" value="spring"><span>스프링</span>
+			</div>
+		</div>
+		<div style="width:297px; padding:0px;">
+			<label for="cars">Car :</label>
+			<select name="cars" id="cars">
+				<option value="VOLVO">VOLVO</option>
+				<option value="BENZ">BENZ</option>
+				<option value="AUDI">AUDI</option>
+				<option value="KIA">KIA</option>
+				<option value="HYONDAI">HYONDAI</option>
+			</select>
+		</div>
+		<div style="width:297px; padding:0px;">
+		<label for="id">Message</label>
+		<textarea name="body" cols="50" rows="10" style="resize:none; width:297px;" placeholder="자기소개를 입력해주세요!"></textarea><br>
+		</div>
+		<input type="submit" value="submit" style="width:297px; margin-top:10px;">
+		<input type="hidden" name= "avt" value="11">
+	
+	</form>
+	<br>
+	<form>
+		<label for="name">이름 : </label>
+		<input type="text" id="name" name="name"><br>	
+		<label for="addr">주소 : </label>
+		<input type="text" id="addr" name="addr"><br>	
+		<label for="tel">전화번호 : </label>
+		<input type="text" id="tel" name="tel"><br>	
+	</form>
+</body>
+
+</html>
