@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Selector</title>
+<style type="text/css">
+	body {
+		text-align: center;
+	}
+	
+	.content{
+		display: inline-block;
+		width: 500px;
+	}
+	
+	h2 {
+		padding: 20px;
+		background-color:OrangeRed;
+		color:white;
+	}
+	
+	.box{
+		display: inline-block;
+		width: 100px;
+		text-align:left;
+	}
+	
+	input:checked{
+		display:block;
+		width:50px;
+		height: 50px;
+	}
+</style>
+</head>
+<body>
+	<div class="content">
+		<h2>수강 과목 선택</h2>
+		<div class="box">
+			<input type="checkbox" name="fav" value="java">
+			<label for="java">java</label>
+		</div>
+		<div class="box">
+			<input type="checkbox" name="fav" value="ORACLE">
+			<label for="ORACLE">ORACLE</label>
+		</div>
+		<div class="box">
+			<input type="checkbox" name="fav" value="HTML5">
+			<label for="HTML5">HTML5</label>
+		</div>
+		<div class="box">
+			<input type="checkbox" name="fav" value="CSS">
+			<label for="CSS">CSS</label>
+		</div>
+		<div class="box">
+			<input type="checkbox" name="fav" value="Javascript">
+			<label for="Javascript">Javascript</label>
+		</div>
+		<div class="box">
+			<input type="checkbox" name="fav" value="JSP">
+			<label for="JSP">JSP</label>
+		</div>
+		<div class="box">
+			<input type="checkbox" name="fav" value="jQuery">
+			<label for="jQuery">jQuery</label>
+		</div>
+		<div class="box">
+			<input type="checkbox" name="fav" value="Spring">
+			<label for="Spring">Spring</label>
+		</div>
+	</div>
+</body>
+</html>

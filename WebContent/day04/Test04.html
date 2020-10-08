@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	body {
+	text-align: center;
+	}
+	
+	.content{
+		display: inline-block;
+		width: 500px;
+	}
+	
+	h2 {
+		padding: 20px;
+		background-color:OrangeRed;
+		color:white;
+	}
+	
+	.box{
+		display: inline-block;
+		width: 100px;
+		text-align:left;
+	}
+	.content > *:first-child{
+		background-color: olive;
+	}
+	
+	.content > div:last-child{
+		color: lightseagreen;
+	}
+	
+	.content > div:nth-child(5){
+		border: 2px solid DeepSkyBlue;
+	}
+	
+	h2, label {
+		color: crimson;
+	}
+	.content > div:last-child > label {
+		background-color: lightseagreen;
+	}
+	
+	input:checked {
+		display:block;
+		width:50px;
+		height: 50px;
+	}
+	
+	div:nth-child(2n) > label {
+		color:Orange;
+	}
+	
+	:nth:child(2) ~ div{
+		border: 3px solid deeppink;
+	}	
+	
+</style>
+</head>
+<body>
+<body>
+	<div class="content">
+		<h2>수강 과목 선택</h2>
+		<div class="box">
+			<input type="checkbox" name="fav" value="java">
+			<label for="java">java</label>
+		</div>
+		<div class="box">
+			<input type="checkbox" name="fav" value="ORACLE">
+			<label for="ORACLE">ORACLE</label>
+		</div>
+		<div class="box">
+			<input type="checkbox" name="fav" value="HTML5">
+			<label for="HTML5">HTML5</label>
+		</div>
+		<div class="box">
+			<input type="checkbox" name="fav" value="CSS">
+			<label for="CSS">CSS</label>
+		</div>
+		<div class="box">
+			<input type="checkbox" name="fav" value="Javascript">
+			<label for="Javascript">Javascript</label>
+		</div>
+		<div class="box">
+			<input type="checkbox" name="fav" value="JSP">
+			<label for="JSP">JSP</label>
+		</div>
+		<div class="box">
+			<input type="checkbox" name="fav" value="jQuery">
+			<label for="jQuery">jQuery</label>
+		</div>
+		<div class="box">
+			<input type="checkbox" name="fav" value="Spring">
+			<label for="Spring">Spring</label>
+		</div>
+	</div>
+</body>
+</html>

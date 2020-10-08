@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>Insert title here</title>
+<style>
+	
+	body {
+		color:LightSlateGrey;
+	}
+	
+	.info{
+		display: block;
+	}
+	
+	p + h3 > .info{
+		color: dodgerBlue;
+	}
+	
+	.info > .info{
+		color:blue;
+	}
+	
+	body > div > h3{
+		color:orangered;
+	}
+	
+	body > p {
+		color: lime;
+		background-color: teal;
+		padding: 5px;
+	}
+	
+	body > h3 > tel > hp {
+		color: yellowGreen!important;
+	}
+</style>
+</head>
+<body>
+	<div>
+		<h3>Child Selector 1</h3>
+	</div>
+	<p>자식 선택자</p>
+	<h3>
+		<sno class="info">12345</sno>
+		<std class="info">이지우</std>
+		<tel class="info"> 
+			<office class="info"> 02-1234-5678</office>
+			<hp class="info"> 010-2456-7890</hp>
+		</tel>
+	</h3>
+</body>
+</html>

@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="UTF-8">
+<title>CSS Class</title>
+<style type="text/css">
+
+	body{
+		text-align:center;
+		border: 1px solid gray;
+	}
+	
+	.d1 {
+		height: 30px;
+		border: 2px solid red;
+	}
+	
+	.d2 {
+	/* 	display: inline-block;
+		width: 150px; */
+		height: 30px;
+		border: 3px solid blue;
+	}
+	
+	.d3 {
+		display: inline-block;
+		width: 150px;
+		height: 30px;
+		border: 3px dotted blue;
+	}
+
+	.d3:nth-child(2){
+		margin-top:20px;
+	}
+	
+	.d3:nth-last-child(4){
+			margin : 0px 50px;  /* top-bottom right-left*/
+/* 		margin: 0px 50px 0px; /* /* top left-right bottom*/
+/*		margin : 0px 50px 0px 50px;*/ /* top left right bottom*/
+ 	}
+	.d2:nth-child(4){
+		margin-bottom:20px; 
+	}
+	
+	
+</style>
+</head>
+<body>
+	<div class="d1">div1</div>
+	<div class="d2">div2</div>
+	<div class="d3">div3-1</div>
+	<div class="d3">div3-2</div>
+	<div class="d3">div3-3</div>
+	<div class="d2">div4</div>
+	<div class="d2">div5</div>
+</body>
+</html>
